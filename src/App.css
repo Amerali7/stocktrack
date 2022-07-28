@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  min-height: calc(100vh - 76px);
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.tradingview-widget-copyright {
+  display: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -36,3 +41,52 @@
     transform: rotate(360deg);
   }
 }
+
+.portfolio-configuration,
+.portfolio-monitor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.portfolio-button-continue-wrapper,
+.portfolio-button-back-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-button-continue,
+.portfolio-button-back {
+    width: 200px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.portfolio-button-continue:hover,
+.portfolio-button-back:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.cal{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

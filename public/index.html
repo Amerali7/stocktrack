@@ -28,6 +28,57 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright">
+          <a
+              href="https://www.tradingview.com"
+              rel="noopener"
+              target="_blank"
+              ><span class="blue-text">Ticker Tape</span></a
+          >
+          by TradingView
+      </div>
+      <script
+          type="text/javascript"
+          src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js"
+          async
+      >
+            {
+            "symbols": [
+              {
+                "proName": "FOREXCOM:SPXUSD",
+                "title": "S&P 500"
+              },
+              {
+                "proName": "FOREXCOM:NSXUSD",
+                "title": "Nasdaq 100"
+              },
+              {
+                "description": "Gold",
+                "proName": "AMEX:GLD"
+              },
+              {
+                "description": "Treasury",
+                "proName": "NASDAQ:TLT"
+              },
+              {
+                "description": "Tesla",
+                "proName": "NASDAQ:TSLA"
+              },
+              {
+                "description": "Apple",
+                "proName": "NASDAQ:AAPL"
+              }
+            ],
+            "showSymbolLogo": true,
+            "colorTheme": "light",
+            "isTransparent": true,
+            "displayMode": "adaptive",
+            "locale": "en"
+          };
+      </script>
+  </div>
     <div id="root"></div>
     <!--
       This HTML file is a template.
